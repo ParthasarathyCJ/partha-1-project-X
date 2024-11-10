@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .background-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: skyblue;
+            animation: move 1s  infinite;
+        }
+        .shape1 {
+            width: 600px;
+            height: 500px;
+            top: 10%;
+            left: 20%;
+        }
+      
+        .shape2 {
+            width: 400px;
+            height: 400px;
+            top: 40%;
+            right: 10%;
+        }
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 20px); }
+            100% { transform: translate(0, 0); }
+        }
+        .vertical-form {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            z-index: 1; /* Bring form above the background shapes */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .vertical-form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 1.5rem;
+        }
+        label {
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            transition: border-color 0.3s;
+            margin-top: 0.5rem;
+        }
+        input:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        button {
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shape shape1"></div>
+    <div class="background-shape shape2"></div>
+    <form class="vertical-form" action="https://submit-form.com/Q0A8ecRES" method="POST">
+        <h2>Donors and Food Details</h2>
+        <label for="Donor-name">DONOR NAME</label>
+        <input id="Donor-name" name="Donor-name" type="text" placeholder="Enter your donor name" required />
+        
+        <label for="Address">Address </label>
+        <input id="text" name="Address" type="name and number" placeholder="Enter your address" required />
+        
+
+        <label for="Contact number">Contact details</label>
+        <input id="number" name="Contact number" type="number" placeholder="Enter your contact number" required />    
+
+        <label for="Food-name">Name of the Food</label>
+        <textarea id="Food-name" name="Food-name" rows="4" placeholder="Name of the food with approximate quantity" required></textarea>
+        
+        <label for="Quantity">Quantity of the Food</label>
+        <input id="number" name="Quantity" type="number" placeholder="How many can eat the food?" required />
+
+        
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>  

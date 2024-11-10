@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 4s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+            transform: scale(0);
+            animation: scaleIn 0.5s forwards 0.5s;
+        }
+        @keyframes scaleIn {
+            to {
+                transform: scale(1);
+            }
+        }
+        p {
+            color: #333;
+            margin-bottom: 40px;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 0.5s forwards 1s;
+        }
+        @keyframes slideIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        img {
+            max-width: 200px;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            font-size: 16px;
+            transform: scale(0);
+            animation: scaleIn 0.5s forwards 1.5s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <img src="tnx.jpg" alt="Thank You Image" />
+    <h1>THANK YOU!</h1>
+    <p>Your idea has been received successfully.</p>
+    <a href="index.html" class="button">Return to Home</a>
+</body>
+</html>
