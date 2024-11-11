@@ -3,18 +3,18 @@
 
 /* ----- VARIABLES ----- */
 :root{
-    background-image:  linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    background-image:#000000;
     --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgba(212, 131, 8, 0.938);
+    --text-color-second: #f9811f;
+    --text-color-third: #1fd5f9;
 
     --first-color: rgb(64, 177, 253);
     --first-color-hover:  linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
 
     --second-color:  linear-gradient(to top, #f77062 0%, #fe5196 100%);
     --third-color:   linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
+    --first-shadow-color:#1fd5f9;
 
 }
 
